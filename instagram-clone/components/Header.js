@@ -21,6 +21,7 @@ function Header() {
             layout="fill"
             objectFit="contain"
           />
+          <p>My</p>
         </div>
 
         <div className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
@@ -29,8 +30,8 @@ function Header() {
             layout="fill"
             objectFit="contain"
           />
+          <p className="w-14 text-xs text-red-500">Album</p>
         </div>
-
         {/* Middle - Search input */}
         <div className="max-w-xs">
           <div className="relative mt-1 p-3 rounded">

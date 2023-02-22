@@ -2,21 +2,21 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/Header';
+import Feed from '../components/Feed';
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="bg-gray-50 h-screen overflow-y-scroll scrollbar-hide">
       <Head>
-        <title>Instagram | Album</title>
+        <title>My Instagram | Album</title>
         <link rel="icon" href="/favicon_e.ico" />
       </Head>
 
       {/* <h1>Instagram Album</h1> */}
-      
-      {/* Header */}
+
       <Header />
 
-      {/* Feed */}
+      <Feed />
       
       {/* Modal */}
 
