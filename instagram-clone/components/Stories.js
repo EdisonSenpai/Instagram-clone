@@ -20,12 +20,6 @@ function Stories() {
           username={profile.username}
         />  
       ))}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
-      {/* Story */}
     </div>
   );
 }

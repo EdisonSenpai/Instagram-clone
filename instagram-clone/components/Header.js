@@ -30,7 +30,7 @@ function Header() {
             layout="fill"
             objectFit="contain"
           />
-          <p className="w-14 text-xs text-red-500">Album</p>
+          <p className="w-14 text-xs text-red-500 ml-[0.75px]">Album</p>
         </div>
         {/* Middle - Search input */}
         <div className="max-w-xs">
