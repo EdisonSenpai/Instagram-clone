@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Post from './Post';
-import POST1 from './img/1.jpeg'
-import POST2 from './img/2.jpg'
-import POST3 from './img/3.jpeg'
+import POST1 from './img/1.jpeg';
+import POST2 from './img/2.jpg';
+import POST3 from './img/3.jpeg';
+//import { db } from './firebase';
 
 function App() {
-  //const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([
+    {
+      username: "edy_donea",
+      caption: "With my darling on a date❣️",
+      imageUrl: POST1,
+    },
+    {
+      username: "suki_xd",
+      caption: "My darling and me ❤️",
+      imageUrl: POST2,
+    },
+    {
+      username: "andrada.blindu",
+      caption: "Sweet love 💕^^",
+      imageUrl: POST3,
+    },
+  ]);
+
+  // 'useEffect' runs a piece of code based on a specific condition 
+
+  useEffect(() => {
+    // this is where the code runs
+  }, [])
 
   return (
     <div className="App">
@@ -20,9 +43,11 @@ function App() {
 
       <h1>Hello World! 😇 [an Instagram clone] </h1>
 
-      <Post username="edy_donea" caption="With my darling on a date❣️" imageUrl={POST1}/>
-      <Post username="suki_xd" caption="My darling and me ❤️" imageUrl={POST2}/>
-      <Post username="andrada.blindu" caption="Sweet love 💕^^" imageUrl={POST3}/>
+      {
+        posts.map(post => (
+          <Post username={post.username} caption={post.caption} imageUrl={post.imageUrl}/>
+        ))
+      }
       
     </div>
   );
