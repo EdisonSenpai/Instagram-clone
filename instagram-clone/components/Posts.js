@@ -10,7 +10,7 @@ const posts = [
         caption: "Me and my beautiful love 💕",
     },
     {
-        id: '123',
+        id: '321',
         username: 'edy_donea',
         userImg: Profile.src,
         img: Profile.src,
